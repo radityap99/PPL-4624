@@ -14,3 +14,6 @@ Laurentius Krisna Yoga A11.2018.10901
 - Wireframe
 - Penjelasan Project manajemet
 ```
+
+Veri Hendrian 
+-blm berkontibusi, mungkin habis uts akan belajar serius 
