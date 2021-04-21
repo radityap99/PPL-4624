@@ -4,5 +4,14 @@ Proyek PPL
 Kelompok 2 
 
 Raditya Priyastama A11.2018.10900
-
-Laurentius Krisna Yoga A11.2018..10901
+```
+- Project Charter
+- Gant Chart
+- Work Breakdown Structure
+```
+Laurentius Krisna Yoga A11.2018.10901
+```
+- Project Scope Statement
+- Wireframe
+- Penjelasan Project manajemet
+```
