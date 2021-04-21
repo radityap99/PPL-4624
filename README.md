@@ -16,4 +16,5 @@ Laurentius Krisna Yoga A11.2018.10901
 ```
 
 Veri Hendrian 
--blm berkontibusi, mungkin habis uts akan belajar serius 
+```
+-Belum berkontibusi, mungkin habis uts akan belajar serius dan sering commit
