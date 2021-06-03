@@ -11,7 +11,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-blog"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Bubic Resto</div>
+                <div class="sidebar-brand-text mx-3">ADMIN</div>
             </a>
 
             <!-- Divider -->
@@ -19,37 +19,29 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('admin/dashboard_admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                KATEGORI
-            </div>
-         
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('admin/update_menu') ?>">
                     <i class="fas fa-utensils"></i>
-                    <span>Makanan</span></a>
+                    <span>Update Menu</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-cocktail"></i>
-                    <span>Minuman</span></a>
+                <a class="nav-link" href="<?php echo base_url('admin/history') ?>">
+                    <i class="fas fa-history"></i>
+                    <span>History</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-cookie-bite"></i>
-                    <span>Snack</span></a>
+                <a class="nav-link" href="<?php echo base_url('admin/menu_favorite') ?>">
+                    <i class="fas fa-star"></i>
+                    <span>Menu Favorite</span></a>
             </li>
 
             <!-- Divider -->
