@@ -19,9 +19,8 @@
             <td><?php echo $mnu->nama_menu ?></td>
             <td><?php echo $mnu->keterangan ?></td>
             <td><?php echo $mnu->harga ?></td>
-            <td><div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div></td>
-            <td><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div></td>
-            <td><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div></td>
+            <td><?php echo anchor('admin/update_menu/edit/' .$mnu->id_menu, '<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>') ?></td>
+            <td><?php echo anchor('admin/update_menu/hapus/' .$mnu->id_menu, '<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>') ?></td>
         </tr>
 
         <?php endforeach; ?>
@@ -55,7 +54,7 @@
                 </div>
                 <div class="form-group">
                     <label>Gambar Produk</label><br>
-                    <input type="file" name="gambar" class="form-control">
+                    <input type="file" name="gambar" class="form-control" accept="image/*">
                 </div>
             
       </div>
