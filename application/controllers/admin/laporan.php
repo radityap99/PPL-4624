@@ -1,6 +1,6 @@
 <?php
 
-class Dashboard_admin extends CI_Controller{
+class Laporan extends CI_Controller{
     
     public function __construct()
     {
@@ -17,9 +17,10 @@ class Dashboard_admin extends CI_Controller{
 
     public function index()
     {
+        $data['menu'] = $this->model_laporan->tampil_data();
         $this->load->view('templates_admin/header');
         $this->load->view('templates_admin/sidebar');
-        $this->load->view('admin/dashboard');
+        $this->load->view('admin/laporan', $data);
         $this->load->view('templates_admin/footer');
     }
 }
