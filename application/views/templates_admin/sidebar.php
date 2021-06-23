@@ -33,15 +33,15 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/history') ?>">
+                <a class="nav-link" href="<?php echo base_url("admin/history") ?>">
                     <i class="fas fa-history"></i>
                     <span>History</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/menu_favorite') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/laporan') ?>">
                     <i class="fas fa-star"></i>
-                    <span>Menu Favorite</span></a>
+                    <span>Laporan</span></a>
             </li>
 
             <!-- Divider -->
@@ -116,29 +116,19 @@
                                 </form>
                             </div>
                         </li>
-
-                        
-
+                        <div class='navbar'>
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login Admin</span>
-                                <img class="img-profile rounded-circle"
-                                    src="uploads/bubic1.png">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Login
-                                </a>
-                            </div>
-                        </li>
+                        <ul class="na navbar-nav navbar-right">
+                            <?php if($this->session->userdata('username')) { ?>
+                            <li><div>Selamat Datang <?php echo $this->session->userdata('nama') ?></div></li>
+                            <li><?php echo anchor('auth/logout', 'Logout'); ?></li>
+                            <?php } else { ?>
+                            <li><?php echo anchor('auth/login', 'Login'); ?></li>
+
+                            <?php } ?>
+                        </ul>
+                        </div>
 
                     </ul>
 
