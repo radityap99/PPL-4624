@@ -29,7 +29,9 @@
                 <button class="btn btn-sm btn-primary col-2"> Pesan <i class="fas fa-paper-plane"></i></button>
                 </div>
             </form>
-         
+            
+            <a href="<?php echo base_url("dashboard/detail_keranjang") ?>"><div class="btn btn-sm btn-danger mt-3">Kembali</div></a>
+
             <?php 
              }else{
                  echo "<h5>Anda Belum Memiliki Pesanan";
