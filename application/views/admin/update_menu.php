@@ -4,10 +4,12 @@
 
     <table class="table table-bordered">
         <tr>
-             <th>Makanan</th>
-             <th>Keterangan</th>
-             <th>Harga</th>
-             <th colspan="3">Aksi</th>
+            <th>No</th>
+            <th>Makanan</th>
+            <th>Keterangan</th>
+            <th>Kategori</th>
+            <th>Harga</th>
+            <th colspan="3">Aksi</th>
             
         </tr>  
 
@@ -16,8 +18,10 @@
         foreach($update as $mnu) : ?>
 
         <tr>
+            <td><?php echo $no++ ?></td>
             <td><?php echo $mnu->nama_menu ?></td>
             <td><?php echo $mnu->keterangan ?></td>
+            <td><?php echo $mnu->kategori ?></td>
             <td><?php echo $mnu->harga ?></td>
             <td><?php echo anchor('admin/update_menu/edit/' .$mnu->id_menu, '<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>') ?></td>
             <td><?php echo anchor('admin/update_menu/hapus/' .$mnu->id_menu, '<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>') ?></td>
@@ -47,6 +51,10 @@
                 <div class="form-group">
                     <label>Keterangan</label>
                     <input type="text" name="keterangan" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <input type="text" name="kategori" class="form-control">
                 </div>
                 <div class="form-group">
                     <label>Harga</label>

@@ -16,6 +16,11 @@
             </div>
 
             <div class="for-group">
+                <label>Kategori</label>
+                <input type="text" name="kategori" class="form-control" value="<?php echo $mnu->kategori ?>">
+            </div>
+
+            <div class="for-group">
                 <label>Harga</label>
                 <input type="text" name="harga" class="form-control" value="<?php echo $mnu->harga ?>">
             </div>
