@@ -35,6 +35,24 @@ class Model_history extends CI_Model{
             return false;
         }
     }
-}
 
-?>
+    public function ambil_id_history($id_history)
+    {
+        $result = $this->db->where('id', $id_history)->limit(1)->get('tb_history');
+        if($result->num_rows() > 0){
+            return $result->row();
+        }else {
+            return false;
+        }
+    }
+
+    public function ambil_id_pesanan($id_history)
+    {
+        $result = $this->db->where('id_history', $id_history)->limit(1)->get('tb_pesanan');
+        if($result->num_rows() > 0){
+            return $result->result();
+        }else {
+            return false;
+        }
+    }
+}
