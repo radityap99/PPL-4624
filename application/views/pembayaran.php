@@ -16,7 +16,7 @@
             </div><br><br>
             <h3>Input Data Customer</h3>
             
-            <form method="post" action="<?php echo base_url() ?> dashboard/proses_pesanan">
+            <form method="post" action="<?php echo base_url("dashboard/proses_pesanan") ?> ">
                 <div class="form-group">
                     <label>Nama Customer</label>
                     <input type="text" id = "nama" name="nama" placeholder="Nama Anda" class="form-control">
@@ -25,10 +25,11 @@
                     <label>No. Meja</label>
                     <input type="text" id="no_meja" name="no_meja" placeholder="Nomor Tempat Duduk" class="form-control">
                 </div>
+                <div>
+                <button class="btn btn-sm btn-primary col-2"> Pesan <i class="fas fa-paper-plane"></i></button>
+                </div>
             </form>
-            <a href="<?php echo base_url('dashboard/proses_pesanan') ?>"><div 
-            class="btn btn-sm btn-primary">Pesan</div></a>  
-
+         
             <?php 
              }else{
                  echo "<h5>Anda Belum Memiliki Pesanan";
