@@ -35,19 +35,19 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/makanan') ?>">
                     <i class="fas fa-utensils"></i>
                     <span>Makanan</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/minuman') ?>">
                     <i class="fas fa-cocktail"></i>
                     <span>Minuman</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('kategori/snack') ?>">
                     <i class="fas fa-cookie-bite"></i>
                     <span>Snack</span></a>
             </li>
