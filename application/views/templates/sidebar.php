@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('dashboard/index') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -125,28 +125,29 @@
                             </div>
                         </li>
 
-                        
+                        <div class="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <?php 
+                                        $keranjang = 'Keranjang Belanja : ' .$this->cart->total_items(). 'items'
+                                    ?>
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
+                                    <?php echo anchor('dashboard/detail_keranjang', $keranjang) ?>
+                                </li>
+                            </ul>
+                            <div class="topbar-divider d-none d-sm-block"></div>
 
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Login Admin</span>
-                                <img class="img-profile rounded-circle"
-                                    src="uploads/bubic1.png">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Login
-                                </a>
-                            </div>
-                        </li>
+                                <ul class="na navbar-nav navbar-right">
+                                    <?php if($this->session->userdata('role_id')) { ?>
+                                     <li><div>Selamat Datang <?php echo $this->session->userdata('username') ?></div></li>
+                                     <li><?php echo anchor('auth/logout', 'Logout'); ?></li>
+                                    <?php } else { ?>
+                                     <li><?php echo anchor('auth/login', 'Login'); ?></li>
+
+                                    <?php } ?>
+                                </ul>
+                            
+                        </div>
 
                     </ul>
 
