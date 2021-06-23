@@ -28,6 +28,7 @@ class update_menu extends CI_Controller{
     {
         $nama_menu  = $this->input->post('nama_menu');
         $keterangan = $this->input->post('keterangan');
+        $kategori   = $this->input->post('kategori');
         $harga      = $this->input->post('harga');
         $gambar     = $_FILES['gambar']['name'];
 
@@ -49,6 +50,7 @@ class update_menu extends CI_Controller{
         $data = array (
             'nama_menu'     => $nama_menu,
             'keterangan'    => $keterangan,
+            'kategori'      => $kategori,
             'harga'         => $harga,
             'gambar'        => $gambar
         );
@@ -74,11 +76,13 @@ class update_menu extends CI_Controller{
         $id             =$this->input->post('id_menu');
         $nama_menu      =$this->input->post('nama_menu');
         $keterangan     =$this->input->post('keterangan');
+        $kategori       =$this->input->post('kategori');
         $harga          =$this->input->post('harga');
 
         $data = array(
             'nama_menu'     => $nama_menu,
             'keterangan'    => $keterangan,
+            'kategori'      => $kategori,
             'harga'         => $harga,
         );
         $where = array(
