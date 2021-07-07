@@ -40,7 +40,7 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('admin/laporan') ?>">
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-clipboard-list"></i>
                     <span>Laporan</span></a>
             </li>
 
