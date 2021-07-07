@@ -1,5 +1,8 @@
 <div class="container-fluid">
     <h4>Data Pesanan</h4>
+    
+    <a href="<?php echo base_url("admin/dashboard_admin") ?>"><div class="btn btn-sm btn-danger mb-3 mt-3">Kembali</div></a>
+    <a href="<?php echo base_url("admin/laporanpdf") ?>"><div class="btn btn-sm btn-success mb-3 mt-3">Cetak</div></a>
 
     <table class="table table-bordered table-hover table-striped">
         <tr>
@@ -21,6 +24,7 @@
             </tr>
 
         <?php endforeach; ?>
+        
     </table>
-    <a href="<?php echo base_url("admin/dashboard_admin") ?>"><div class="btn btn-sm btn-danger mt-3">Kembali</div></a>
+    
 </div>

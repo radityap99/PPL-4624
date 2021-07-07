@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <h4>Data Pemesan</h4>
-
+    <a href="<?php echo base_url("admin/dashboard_admin") ?>"><div class="btn btn-sm btn-danger mb-3 mt-3">Kembali</div></a>
     <table class="table table-bordered table-hover table-striped">
         <tr>
             <th>Id History</th>

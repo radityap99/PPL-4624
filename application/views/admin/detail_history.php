@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <h4>Detail Pesanan <div class="btn btn-sm btn-success">No : 
+    
         <?php echo $history->id ?></div></h4>
     
     <table class="table table-bordered table-hover table-striped">
@@ -28,4 +29,5 @@
 
         <?php endforeach; ?>
     </table>
+    <a href="<?php echo base_url("admin/history") ?>"><div type="button" class="btn btn-danger btn-sm mt-3">Kembali</div></a>
 </div>

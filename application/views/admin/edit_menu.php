@@ -25,7 +25,9 @@
                 <input type="text" name="harga" class="form-control" value="<?php echo $mnu->harga ?>">
             </div>
 
+            <a href="<?php echo base_url("admin/update_menu") ?>"><div type="button" class="btn btn-danger btn-sm mt-3">Kembali</div></a>
             <button type="submit" class="btn btn-primary btn-sm mt-3">Simpan</button>
+            
         </form>
 
     <?php endforeach; ?>

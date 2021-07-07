@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
     <button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambahmenu"><i class="fas fa-plus fa-sm"></i>Tambah</button>
-
+    <a href="<?php echo base_url("admin/dashboard_admin") ?>"><div class="btn btn-sm btn-danger mb-3 -3">Kembali</div></a>
     <table class="table table-bordered">
         <tr>
             <th>No</th>
@@ -38,9 +38,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Tambah Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <a href="<?php echo base_url("admin/update_menu") ?>"><div type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</div></a>
+        
+            
       </div>
       <div class="modal-body">
             <form action="<?php echo base_url(). 'admin/update_menu/tambah_aksi'; ?>" method="post" enctype="multipart/form-data">
@@ -67,7 +67,7 @@
             
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+      <a href="<?php echo base_url("admin/update_menu") ?>"><div type="button" class="btn btn-danger">Tutup</div></a>
         <button type="submit" class="btn btn-primary">Simpan</button>
       </div>
       </form>
